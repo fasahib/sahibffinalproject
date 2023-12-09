@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+        initial-scale-1, shrink-to-fit=no">
+    <title>Upload Post</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--End of Bootstrap CSS-->
+    <!--Custom Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Battambang&display=swap">
+    <!--End of Custom Fonts-->
+</head>
+
+<body>
+<div class="default-page-layout"></div>
+    <!--Header Area-->
+    <header>
+        <h1 class="title-space title-text">Cozy Hooks</h1>
+            <nav class="navbar navbar-expand-md navbar-dark navigation-space">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavBarMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="NavBarMenu">
+                        <ul class="navbar-nav me-auto regular-text">
+                            <li>
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="browse.html">Browse</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="account.html">Account</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+<!--End of Header Area-->
+
+<!--Body Area-->
+<main>
+    <h2>Upload</h2>
+    <form class="upload-body-layout">
+        <div class="upload-selection">
+            <label>Select Type of Post</label>
+            <div class="upload-selection-radio">
+                <input type="radio" id="pattern" value="pattern" name="type-selection">
+                <label for="pattern" class="secondary-button">Pattern</label>
+                <input type="radio" id="stitch" value="stitch" name="type-selection">
+                <label for="stitch" class="secondary-button">Stitch</label>
+                <input type="radio" id="project" value="project" name="type-selection">
+                <label for="project" class="secondary-button">Project</label>
+            </div>
+        </div>
+        <div class="upload-confirm-cancel-buttons">
+            <button type="submit" class="primary-button">Upload</button>
+            <a href="account.html" class="primary-button">Cancel</a>
+        </div>
+        <div class="upload-image">
+            Click Here to upload an image (Currently Unavailable)
+        </div>
+        <div class="upload-post-information">
+            <label for="post-name">Name of Post:</label>
+            <input type="text" id="post-name" name="post-name" value="" required>
+            <br>
+            <label for="description">Post Description:</label>
+            <br>
+            <textarea type="text" id="description" name="description" value="" required></textarea>
+        </div>
+        <div class="upload-post-steps">
+            <label for="steps">Steps:</label>
+            <br>
+            <textarea type="text" id="steps" name ="steps" value="" required></textarea>
+        </div>
+    </form>
+</main>
+    <!--End of Body Area-->
+
+    <!--Footer Area-->
+    <footer class="footer-space">
+        Footer
+    </footer>
+    <!--End of Footer Area-->
+</div>
+<!--Bootstrap JS Bundle-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!--End of Bootstrap JS Bundle-->
+</body>
+</html>
